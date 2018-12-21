@@ -1,7 +1,48 @@
 <h2>Currencies Exchange</h2>
+<div class="container">
+  <div class="row">
 
-<div *ngIf="currencies">
-  <div><span>Venta: </span>{{currencies.response[0]}}</div>
-  <div><span>Compra: </span>{{currencies.response[1]}}</div>
-  <div><span>{{currencies.response[2]}}</span></div>
+    <div class="col-4">
+      <div *ngIf="currencies" class="card" style="width: 12rem;">
+        <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/800px-Flag_of_the_United_States.svg.png" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title" style="text-align:center">Dolar</h4>
+          <p class="font-italic" style="font-size:0.8em; text-align:center">{{currencies.response[2]}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><span>Venta: </span>${{currencies.response[0]}}</li>
+          <li class="list-group-item"><span>Compra: </span>${{currencies.response[1]}}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div *ngIf="currencies" class="card" style="width: 12rem;">
+        <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/800px-Flag_of_the_United_States.svg.png" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title" style="text-align:center">Dolar</h4>
+          <p class="font-italic" style="font-size:0.8em; text-align:center">{{currencies.response[2]}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><span>Venta: </span>${{currencies.response[0]}}</li>
+          <li class="list-group-item"><span>Compra: </span>${{currencies.response[1]}}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div *ngIf="currencies" class="card" style="width: 12rem;">
+        <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/800px-Flag_of_the_United_States.svg.png" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title" style="text-align:center">Dolar</h4>
+          <p class="font-italic" style="font-size:0.8em; text-align:center">{{currencies.response[2]}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><span>Venta: </span>${{currencies.response[0]}}</li>
+          <li class="list-group-item"><span>Compra: </span>${{currencies.response[1]}}</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
 </div>
