@@ -1,0 +1,11 @@
+<div *ngIf="user" class="users">
+  <div><span>Nombre: </span>{{user.nombre}}</div>
+  <div><span>Apellido: </span>{{user.apellido}}</div>
+  <div><span>Email: </span>{{user.email}}</div>
+  <div><span>Password: </span>{{user.password}}</div>
+  <div>
+    <button routerLink="/user-edit/{{user.id}}">
+      Editar
+    </button>
+  </div>
+</div>

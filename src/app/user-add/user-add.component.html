@@ -1,0 +1,19 @@
+<div>
+  <h2>Nuevo Usuario</h2>
+  <div>
+    <label>Nombre:
+      <input [(ngModel)]="userData.nombre" placeholder="Nombre"/>
+    </label><br>
+    <label>Apellido:
+      <input [(ngModel)]="userData.apellido" placeholder="Apellido"/>
+    </label><br>
+    <label>Email:
+      <input [(ngModel)]="userData.email" placeholder="Email"/>
+    </label><br>
+    <label>Password:
+      <input [(ngModel)]="userData.password" placeholder="Password"/>
+    </label><br>
+    
+  </div>
+  <button (click)="addUser()">Guardar</button>
+</div>
